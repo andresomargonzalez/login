@@ -19,4 +19,7 @@ export class Login {
   authenticate() {
     this._loginService.authenticate(this.username, this.password);
   }
+  signUp() {
+    this._loginService.signUp(this.username, this.password);
+  }
 }

@@ -10,9 +10,10 @@
   <script src="lib/router.dev.js"></script>
   <script src="lib/http.dev.js"></script>
   <script src="lib/lodash.min.js"></script>
+  <script src="lib/material.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.1.2/material.indigo-pink.min.css">
-  <script  src="https://code.getmdl.io/1.1.2/material.min.js"></script>
+
 
   <script>
     System.config({
@@ -28,7 +29,8 @@
         }
       },
       map: {
-        'lodash': 'lib/lodash.min.js'
+        'lodash': 'lib/lodash.min.js',
+        'material-design-lite': 'lib/material.min.js'
       }
     });
     System.import('app/boot')
