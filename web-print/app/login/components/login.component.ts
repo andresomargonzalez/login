@@ -11,15 +11,12 @@ import {LoginService} from "../services/login.service";
 })
 
 export class Login {
-  username;
-  password;
-  constructor(private _loginService: LoginService) {
+  username: String;
+  password: String;
 
+  constructor(private _loginService: LoginService) {
   }
   authenticate() {
-    this._loginService.authenticate(this.username, this.password)
-      .subscribe(res => {
-        console.log(res);
-    });
+    this._loginService.authenticate(this.username, this.password);
   }
 }
