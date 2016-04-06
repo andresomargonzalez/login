@@ -1,0 +1,39 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "mongoose/mongoose.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "node/node.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "body-parser/body-parser.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "express-serve-static-core/express-serve-static-core.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "express/express.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "serve-static/serve-static.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "mime/mime.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "morgan/morgan.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "passport/passport.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "jsonwebtoken/jsonwebtoken.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    }
+  }
+}
