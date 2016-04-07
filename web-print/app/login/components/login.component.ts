@@ -11,7 +11,7 @@ import {LoginService} from "../services/login.service";
 })
 
 export class Login {
-  username: String;
+  username: String; 
   password: String;
 
   constructor(private _loginService: LoginService) {
