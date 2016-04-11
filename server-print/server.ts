@@ -63,7 +63,7 @@ apiRoutes.post('/register',  function(req, res) {
       if(err){
         return res.json({success: false, message: 'That email address already exists.'});
       }
-      res.json({success: true, message: 'Successfully created new user.'});
+      res.json({success: true, message: 'Successfully created new user.', user:newUser});
     });
   }
 });
@@ -86,7 +86,7 @@ apiRoutes.post('/authenticate',  function(req, res) {
             var token = jwt.sign(user, config.secret, {
               expiresIn : 10080
             });
-            res.json({ success: true, token: 'JWT '+ token , email:user.email, role: user.role});
+            res.json({ success: true, token: 'JWT '+ token , user:user});
           }else{
             res.send({ success: false, message: 'Authentication failed. Passwords did not match.' });
           }
@@ -100,7 +100,7 @@ apiRoutes.post('/authenticate',  function(req, res) {
 
 // Protect dashboard route with JWT
 apiRoutes.get('/dashboard', passport.authenticate('jwt', { session: false }), function(req, res) {
-  res.send('It worked! User id is: ' + req.user.email + '.');
+  res.send('It worked! User id is: ' + req.user._id + '.');
 });
 
 // Set url for API group routes
@@ -108,7 +108,7 @@ app.use('/api',apiRoutes);
 
 // Home route
 app.get('/', function(req,res) {
-  res.send("Tranqui ya tenes un server arribas");
+  res.send("server up!");
 });
 
 app.listen(port);

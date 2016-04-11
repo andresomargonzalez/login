@@ -32,7 +32,8 @@ gulp.task('copy:libs', ['clean'], function () {
       'node_modules/angular2/bundles/angular2.dev.js',
       'node_modules/angular2/bundles/router.dev.js',
       'node_modules/angular2/bundles/http.dev.js',
-      'bower_components/lodash/dist/lodash.min.js'
+      'bower_components/lodash/dist/lodash.min.js',
+      'bower_components/material-design-lite/material.min.js'
     ])
     .pipe(gulp.dest('dist/lib'))
 });
