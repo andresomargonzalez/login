@@ -1,7 +1,6 @@
 /**
  * Created by Omar on 4/5/16.
  */
-"use strict";
 /// <reference path="typings/express/express.d.ts" />
 /// <reference path="typings/mongoose/mongoose.d.ts" />
 /// <reference path="typings/body-parser/body-parser.d.ts" />
@@ -93,5 +92,5 @@ app.get('/', function (req, res) {
     res.send("server up!");
 });
 app.listen(port);
-console.log("Your server is running on port" + port + '.');
+console.log("Your server is running on port " + port + '.');
 //# sourceMappingURL=server.js.map
