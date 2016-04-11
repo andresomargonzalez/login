@@ -1,0 +1,5 @@
+/server-print/node_modules
+/web-print/node_modules
+/web-print/bower_components
+web-print/dist
+.idea
